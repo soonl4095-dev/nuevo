@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ⚠️ IMPORTANTE: reemplaza "https://TU-DOMINIO.com" por tu dominio real
+  antes de subir este archivo. Este portafolio es una sola página (SPA),
+  por eso hay una única <url>; si en el futuro agregas páginas propias
+  (ej. /cv.html, /blog/), añade una entrada <url> por cada una.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://TU-DOMINIO.com/</loc>
+    <lastmod>2026-07-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>
