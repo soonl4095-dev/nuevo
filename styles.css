@@ -177,6 +177,10 @@
         .blocks-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); gap: var(--space-md); }
         .year-header { grid-column: 1 / -1; font-family: var(--font-mono); color: var(--theme-color); font-size: var(--fs-md); margin-top: var(--space-md); margin-bottom: 10px; padding-bottom: 5px; border-bottom: 2px solid var(--theme-color); display: flex; align-items: center; gap: 10px; text-shadow: 0 0 10px rgba(0, 242, 255, 0.3); }
         .year-header:first-child { margin-top: 0; }
+        /* Subsección de nivel superior dentro de certificados (Cursos / Eventos): más grande y con separación amplia */
+        .cert-subsection-title { grid-column: 1 / -1; font-family: var(--font-mono); color: #fff; font-size: var(--fs-lg); font-weight: 700; margin-top: var(--space-lg); margin-bottom: var(--space-sm); padding: var(--space-sm) 0; border-bottom: 1px solid var(--glass-border); }
+        .cert-subsection-title:first-child { margin-top: 0; }
+        .block-card.cert-placeholder { text-align: center; color: var(--text-muted); font-style: italic; }
         .block-card { background: rgba(255,255,255,0.02); border: 1px solid var(--glass-border); border-radius: 12px; padding: var(--space-md); transition: border-color 0.3s ease, background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; min-width: 0; animation: fadeInUp 0.5s ease-out backwards; }
         .block-card:hover { border-color: var(--theme-color); background: rgba(255,255,255,0.05); transform: translateY(-5px); box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
         /* Entrada escalonada: cada card aparece un poco después que la anterior (efecto "cascada"),
