@@ -1,0 +1,6 @@
+# Permite a todos los buscadores rastrear e indexar el portafolio completo.
+User-agent: *
+Allow: /
+
+# ⚠️ Reemplaza TU-DOMINIO.com por tu dominio real una vez publiques el sitio.
+Sitemap: https://TU-DOMINIO.com/sitemap.xml

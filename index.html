@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#050a14">
+    <meta name="color-scheme" content="dark">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=no">
+    
+    <title>Yoshiro Apolinario López | Ing. Ciberseguridad & Sistemas</title>
+    <meta name="description" content="Portafolio profesional de Yoshiro Apolinario López.">
+
+    <!-- ============================================================
+         OPEN GRAPH / TWITTER CARD
+         ⚠️ IMPORTANTE: reemplaza TU-DOMINIO.com por tu dominio real
+         una vez publiques el sitio. Los rastreadores de WhatsApp,
+         LinkedIn y Facebook requieren URLs ABSOLUTAS para la imagen,
+         no funcionan con rutas relativas como "og-image.png".
+         ============================================================ -->
+    <meta property="og:title" content="Yoshiro Apolinario López | Ing. Ciberseguridad & Sistemas">
+    <meta property="og:description" content="Explora mi portafolio interactivo: SENATI, UTP, certificaciones Cisco, experiencia en CCTV, cableado estructurado y más.">
+    <meta property="og:type" content="profile">
+    <meta property="og:locale" content="es_PE">
+    <meta property="og:url" content="https://TU-DOMINIO.com/">
+    <meta property="og:image" content="https://TU-DOMINIO.com/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Yoshiro Apolinario López - Ing. Ciberseguridad & Sistemas">
+    <meta property="profile:first_name" content="Yoshiro">
+    <meta property="profile:last_name" content="Apolinario López">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Yoshiro Apolinario López | Ing. Ciberseguridad & Sistemas">
+    <meta name="twitter:description" content="Portafolio interactivo: SENATI, UTP, certificaciones Cisco y experiencia en ciberseguridad.">
+    <meta name="twitter:image" content="https://TU-DOMINIO.com/og-image.png">
+
+    <!-- ============================================================
+         FAVICON multi-formato: SVG vectorial para navegadores modernos,
+         PNG en varios tamaños para pestañas/accesos directos, .ico como
+         fallback universal, y apple-touch-icon para iOS ("Añadir a inicio").
+         ============================================================ -->
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/icon-32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/icon-180.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer></script>
+
+    <!-- ============================================================
+         DATOS ESTRUCTURADOS (Schema.org / JSON-LD)
+         Ayuda a Google a entender que esta página describe a una
+         PERSONA real con un currículum, y puede mostrar un rich
+         snippet al buscar "Yoshiro Apolinario López".
+         ============================================================ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Yoshiro Apolinario López",
+      "jobTitle": "Ingeniero de Ciberseguridad & Sistemas",
+      "description": "Estudiante de Ciberseguridad con experiencia en instalación y mantenimiento de sistemas de videovigilancia (CCTV), cableado estructurado y redes Cisco/Fortinet.",
+      "url": "https://TU-DOMINIO.com/",
+      "image": "https://TU-DOMINIO.com/og-image.png",
+      "email": "mailto:yoshiroapolinarioc.333@gmail.com",
+      "telephone": "+51917895746",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Lima",
+        "addressCountry": "PE"
+      },
+      "sameAs": [
+        "https://linkedin.com/in/tu-usuario-linkedin",
+        "https://github.com/tu-usuario-github"
+      ],
+      "alumniOf": [
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "SENATI",
+          "sameAs": "https://www.senati.edu.pe/"
+        },
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Universidad Tecnológica del Perú (UTP)",
+          "sameAs": "https://www.utp.edu.pe/"
+        }
+      ],
+      "knowsAbout": [
+        "Ciberseguridad",
+        "Redes Cisco",
+        "Fortinet",
+        "Cableado estructurado",
+        "CCTV",
+        "Python"
+      ]
+    }
+    </script>
+</head>
+<body>
+
+    <div id="scrollProgress" class="scroll-progress" aria-hidden="true">
+        <div id="scrollProgressBar" class="scroll-progress-bar"></div>
+    </div>
+
+    <canvas id="network-bg"></canvas>
+
+    <div id="screen-loader" class="screen active">
+        <div class="loader-content">
+            <h2 class="loader-name">YOSHIRO APOLINARIO</h2>
+            <p style="color: var(--text-muted); margin-bottom: 20px; font-family: var(--font-mono); font-size: 0.8rem;">Inicializando sistema seguro...</p>
+            <div class="loader-bar-container">
+                <div class="loader-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="screen-home" class="screen">
+        <div class="home-container">
+            <div class="profile-card">
+                <div class="profile-img">
+                    <img src="profile-photo.jpg" alt="Foto de perfil de Yoshiro Apolinario López" width="600" height="600">
+                </div>
+                <div class="profile-info">
+                    <h1>Yoshiro Apolinario López</h1>
+                    <h2>Ing. Ciberseguridad & Sistemas</h2>
+                    <p class="profile-tags">"Tecnología • Innovación • Ciberseguridad"</p>
+                    <div class="contact-info">
+                        <a href="mailto:yoshiroapolinarioc.333@gmail.com?subject=Contacto%20desde%20Portafolio" class="contact-pill">📧 yoshiroapolinarioc.333@gmail.com</a>
+                        <a href="tel:+51917895746" class="contact-pill">📱 +51 917 895 746 (Celular)</a>
+                        <a href="https://wa.me/51917895746?text=Hola%20Yoshiro,%20vi%20tu%20portafolio%20digital." target="_blank" class="contact-pill">💬 +51 917 895 746 (WhatsApp)</a>
+                        <a href="https://linkedin.com/in/tu-usuario-linkedin" target="_blank" class="contact-pill">💼 LinkedIn</a>
+                        <a href="https://github.com/tu-usuario-github" target="_blank" class="contact-pill">💻 GitHub</a>
+                    </div>
+                    <button id="downloadCvBtn" onclick="downloadCV()" class="download-btn">⬇️ Descargar CV Optimizado (ATS)</button>
+                </div>
+            </div>
+
+            <div class="choice-container">
+                <h3 class="choice-title">─────────────── FORMACIÓN ACADÉMICA ───────────────</h3>
+                <div class="choice-grid">
+                    <div class="choice-card" role="button" tabindex="0" aria-label="Ver formación en SENATI" onclick="openDashboard('senati')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openDashboard('senati');}">
+                        <span class="card-label">INSTITUTO</span>
+                        <h3>SENATI</h3>
+                        <p>Ingeniería de Ciberseguridad</p>
+                        <div class="card-dates"><span>Inicio: 2023</span><span>Fin: 2026</span></div>
+                        <p class="card-desc">Formación orientada a la protección de sistemas, redes e infraestructura digital, fortaleciendo la prevención y respuesta ante amenazas informáticas.</p>
+                        <div class="choice-action">VER MÁS →</div>
+                    </div>
+                    <div class="choice-card utp" role="button" tabindex="0" aria-label="Ver formación en UTP" onclick="openDashboard('utp')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openDashboard('utp');}">
+                        <span class="card-label">UNIVERSIDAD</span>
+                        <h3>Universidad Tecnológica del Perú (UTP)</h3>
+                        <p>Sistemas e Informática</p>
+                        <div class="card-dates"><span>Inicio: 2026</span><span>Fin: En curso</span></div>
+                        <p class="card-desc">Formación enfocada en el desarrollo de soluciones tecnológicas, programación, bases de datos y gestión de sistemas para entornos empresariales.</p>
+                        <div class="choice-action">VER MÁS →</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="screen-dashboard" class="screen">
+        <div class="dashboard-container" id="dashboard-content"></div>
+    </div>
+
+    <div id="screen-content" class="screen">
+        <div class="content-container" id="content-box">
+            <nav id="content-breadcrumb" class="breadcrumb" aria-label="Ruta de navegación"></nav>
+            <div class="content-header">
+                <h2 id="content-title" class="content-title">Sección</h2>
+            </div>
+            <div id="content-body" class="blocks-container"></div>
+            <button class="nav-btn nav-btn-center" onclick="navigateTo('screen-dashboard')">← Volver al Dashboard</button>
+        </div>
+    </div>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#050a14"/>
+    </linearGradient>
+    <linearGradient id="edgeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2ff"/>
+      <stop offset="100%" stop-color="#0891b2"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Cuerpo del escudo -->
+  <path d="M32 3 L57 12 V29 C57 45 46 55 32 61 C18 55 7 45 7 29 V12 Z"
+        fill="url(#shieldGrad)" stroke="url(#edgeGrad)" stroke-width="2.5"/>
+
+  <!-- Circuito interno: nodos y conexiones estilo red/ciberseguridad -->
+  <g stroke="#00f2ff" stroke-width="1.4" fill="none" opacity="0.85">
+    <path d="M32 16 V26"/>
+    <path d="M32 26 L22 33"/>
+    <path d="M32 26 L42 33"/>
+    <path d="M22 33 V42"/>
+    <path d="M42 33 V42"/>
+    <path d="M22 42 L32 48"/>
+    <path d="M42 42 L32 48"/>
+  </g>
+  <g fill="#00f2ff">
+    <circle cx="32" cy="16" r="2.6"/>
+    <circle cx="32" cy="26" r="2.2"/>
+    <circle cx="22" cy="33" r="2.2"/>
+    <circle cx="42" cy="33" r="2.2"/>
+    <circle cx="22" cy="42" r="2.2"/>
+    <circle cx="42" cy="42" r="2.2"/>
+    <circle cx="32" cy="48" r="2.6"/>
+  </g>
+
+  <!-- Candado central: refuerza la lectura de "seguridad" a tamaño pequeño -->
+  <rect x="27.5" y="27.5" width="9" height="7" rx="1.4" fill="#050a14" stroke="#ff4d4d" stroke-width="1.3"/>
+  <path d="M29.3 27.5 V25 a2.7 2.7 0 0 1 5.4 0 V27.5" fill="none" stroke="#ff4d4d" stroke-width="1.3"/>
+</svg>
